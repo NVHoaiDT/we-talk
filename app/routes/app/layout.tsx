@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, useNavigate } from 'react-router';
 
-import { paths } from '~/config/path';
+import { paths } from '~/configs/path';
 
 export default function AppLayout() {
   const navigate = useNavigate();
