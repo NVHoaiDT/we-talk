@@ -14,20 +14,81 @@ type Pages = {
   "/": {
     params: {};
   };
+  "/auth/register": {
+    params: {};
+  };
+  "/auth/login": {
+    params: {};
+  };
+  "/auth/notify": {
+    params: {};
+  };
+  "/auth/verify-auth": {
+    params: {};
+  };
+  "/app": {
+    params: {};
+  };
+  "/app/discussions": {
+    params: {};
+  };
+  "/app/profile": {
+    params: {};
+  };
 };
 
 type RouteFiles = {
   "root.tsx": {
     id: "root";
+    page: "/" | "/auth/register" | "/auth/login" | "/auth/notify" | "/auth/verify-auth" | "/app" | "/app/discussions" | "/app/profile";
+  };
+  "routes/landing.tsx": {
+    id: "routes/landing";
     page: "/";
   };
-  "routes/home.tsx": {
-    id: "routes/home";
-    page: "/";
+  "routes/auth/register.tsx": {
+    id: "routes/auth/register";
+    page: "/auth/register";
+  };
+  "routes/auth/login.tsx": {
+    id: "routes/auth/login";
+    page: "/auth/login";
+  };
+  "routes/auth/notify.tsx": {
+    id: "routes/auth/notify";
+    page: "/auth/notify";
+  };
+  "routes/auth/verify-auth.tsx": {
+    id: "routes/auth/verify-auth";
+    page: "/auth/verify-auth";
+  };
+  "routes/app/layout.tsx": {
+    id: "routes/app/layout";
+    page: "/app" | "/app/discussions" | "/app/profile";
+  };
+  "routes/app/dashboard.tsx": {
+    id: "routes/app/dashboard";
+    page: "/app";
+  };
+  "routes/app/discover.tsx": {
+    id: "routes/app/discover";
+    page: "/app/discussions";
+  };
+  "routes/app/profile.tsx": {
+    id: "routes/app/profile";
+    page: "/app/profile";
   };
 };
 
 type RouteModules = {
   "root": typeof import("./app/root.tsx");
-  "routes/home": typeof import("./app/routes/home.tsx");
+  "routes/landing": typeof import("./app/routes/landing.tsx");
+  "routes/auth/register": typeof import("./app/routes/auth/register.tsx");
+  "routes/auth/login": typeof import("./app/routes/auth/login.tsx");
+  "routes/auth/notify": typeof import("./app/routes/auth/notify.tsx");
+  "routes/auth/verify-auth": typeof import("./app/routes/auth/verify-auth.tsx");
+  "routes/app/layout": typeof import("./app/routes/app/layout.tsx");
+  "routes/app/dashboard": typeof import("./app/routes/app/dashboard.tsx");
+  "routes/app/discover": typeof import("./app/routes/app/discover.tsx");
+  "routes/app/profile": typeof import("./app/routes/app/profile.tsx");
 };

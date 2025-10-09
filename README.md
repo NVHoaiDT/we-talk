@@ -4,12 +4,12 @@ A modern, simplify version of Reddit.
 
 ## Features
 
--  🚀 Server-side rendering
--  ⚡️ Hot Module Replacement (HMR)
--  📦 Asset bundling and optimization
--  🔄 Data loading and mutations
--  🔒 TypeScript by default
--  🎉 TailwindCSS for styling
+- 🚀 Server-side rendering
+- ⚡️ Hot Module Replacement (HMR)
+- 📦 Asset bundling and optimization
+- 🔄 Data loading and mutations
+- 🔒 TypeScript by default
+- 🎉 TailwindCSS for styling
 
 ## Getting Started
 
@@ -54,12 +54,12 @@ docker run -p 3000:3000 my-app
 
 The containerized application can be deployed to any platform that supports Docker, including:
 
--  AWS ECS
--  Google Cloud Run
--  Azure Container Apps
--  Digital Ocean App Platform
--  Fly.io
--  Railway
+- AWS ECS
+- Google Cloud Run
+- Azure Container Apps
+- Digital Ocean App Platform
+- Fly.io
+- Railway
 
 ### DIY Deployment
 
@@ -82,3 +82,33 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 ---
 
 Built with ❤️ using React Router.
+
+```
+wetalk
+├─ .dockerignore
+├─ .prettierignore
+├─ .prettierrc
+├─ .react-router
+├─ app
+│  ├─ app.css
+│  ├─ root.tsx
+│  ├─ routes
+│  │  └─ home.tsx
+│  ├─ routes.ts
+│  └─ welcome
+│     ├─ logo-dark.svg
+│     ├─ logo-light.svg
+│     └─ welcome.tsx
+├─ Dockerfile
+├─ eslint.config.mjs
+├─ package.json
+├─ pnpm-lock.yaml
+├─ public
+│  └─ favicon.ico
+├─ react-router.config.ts
+├─ README.md
+├─ tailwind.config.cjs
+├─ tsconfig.json
+└─ vite.config.ts
+
+```
